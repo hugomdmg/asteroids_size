@@ -10,7 +10,9 @@ function Cabecera(props){
             <button onClick = {()=>{props.menu('start');   document.getElementById('root').style.backgroundImage = `url('cielo_estrellado.png')`;
 }} id = 'start'><h3>Start</h3></button>
             <button onClick = {()=>{props.menu('search')}} onclick = "contador0()" id = 'search'><h3>Search</h3></button>
-            <button onClick = {()=>{props.menu('fav')}} id = 'fav'><h3>Favorites</h3></button>
+            {/* <button onClick = {()=>{props.menu('fav')}} id = 'fav'><h3>Favorites</h3></button> */}
+            <p id="fav"></p>
+
         </nav>
     </header>
         </>
