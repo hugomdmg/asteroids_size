@@ -60,32 +60,18 @@ function Asteroids() {
       crearAsteroides();
       crearDisparo();
 
-      var fpsInterval, startTime, now, then, elapsed;
-
-      // initialize the timer variables and start the animation
-
-      function startAnimating(fps) {
-        fpsInterval = 1000 / fps;
-        then = Date.now();
-        startTime = then;
         dibujar();
-      }
-
+      
       function dibujar() {
         requestAnimationFrame(dibujar);
-
-        now = Date.now();
-        elapsed = now - then;
-
-        if (elapsed > fpsInterval) {
           context.clearRect(0, 0, context.canvas.width, context.canvas.height);
           drawAsteroides(context);
           drawNave(context);
           drawDisparo(context);
           impactoNave();
-        }
+        
       }
-      startAnimating(20);
+      
     }, [500]);
 
     //-------------------------------

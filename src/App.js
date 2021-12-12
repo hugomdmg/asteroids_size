@@ -29,7 +29,7 @@ function App() {
       <main id = 'contenido'>
           <p id = 'parrafo'>Every day NASA discovers several huge fucking rocks that could kill us all. On this page you can select any date, and of all the fucking space rocks NASA found that day, the largest will be shown on the screen. You can choose a city to compare its size and verify that indeed we would be screwed if that shit falls on us, enjoy friend.</p>
           <p>We use the official data that NASA offers in its public access APIs, if someone has made a mistake, it has been them, we are good people here.</p>
-          <Esfera/>
+          <Esfera control={control}/>
       </main>
       </>
     );
@@ -64,7 +64,7 @@ function App() {
     <Cabecera menu={menu}/>
     <div id="espacio"></div>
     <div id='cuadroAsteroids'>
-    <Asteroids/>
+    <Asteroids control={control}/>
     </div>
     </>
     )

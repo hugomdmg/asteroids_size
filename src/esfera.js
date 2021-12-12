@@ -124,12 +124,13 @@ function proyectar() {
 
 //-------------------------------------------
 
-function Esfera() {
+function Esfera(props) {
 
   const canvasRef = useRef(null);
 
   const draw = (ctx) => {
-      rotary(0.004);
+      rotary(0.008);
+      rotarx(-0.003);
 
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
@@ -198,7 +199,10 @@ function Esfera() {
         draw(context);
         window.requestAnimationFrame(dibujar);
     }
+
+    if(props.control == 'start'){
     dibujar();
+    }
   });
 
   //-------------------------------
