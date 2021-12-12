@@ -122,3 +122,47 @@
           color: brown;
       }
       }
+
+      #cuadroLogin{
+          background-color: rgb(57, 68, 63);
+          flex-direction: column;
+          padding: 5ch;
+          padding-top: 2ch;
+          border-radius: 1ch;
+          
+      }
+      #contenedorCuadroLogin{
+        display: flex;
+        justify-content: center;
+      }
+
+      #botonesLogin{
+          display: flex;
+          flex-direction: row;
+      }
+
+      #botonRegistro{
+          background-color: rgb(57, 68, 63);
+      }
+
+      #botonLogin{
+          border-radius: 0ch;
+      }
+
+      #cuadroAsteroids{
+        display: flex;
+        justify-content: center;
+      }
+
+      #asteroids{
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(129, 60, 3);
+          border-radius: 2ch;
+
+      }
+
+      #canvasGame{
+        background-color: rgb(1, 37, 15);
+        border-radius: 1ch;
+      }
