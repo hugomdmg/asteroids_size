@@ -40,7 +40,7 @@ function Cabecera(props) {
             }}
             id="login"
           >
-            <h3>login</h3>
+            <h3>{props.login}</h3>
           </button>
           <p id="fav"></p>
         </nav>

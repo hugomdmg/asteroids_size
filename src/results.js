@@ -11,6 +11,30 @@ function Results(props) {
   let [nombre, setNombre] = useState(0);
   let [asteroides, setAsteroides] = useState([]);
   let [index, setIndex] = useState(0);
+  let fav = <p></p>;
+  let url = 'https://asteroidsizeserver.herokuapp.com/';
+
+  if(props.login == 'me'){
+    fav = <button onClick={()=>{favoritos(props.data.data[0], props.fecha)}}>Add to fav</button>
+  }
+
+  function favoritos(data, fecha){
+    console.log(data);
+    fetch(`${url}favoritos/guardar`, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  email: data.email,
+                  fecha: fecha,
+                }),
+              }).then((res)=>{
+                return res.json();
+              }).then((data)=>{
+                console.log(data);
+            });
+  }
 
   function otro(){
     setEjeMayor(asteroides[index].estimated_diameter.kilometers.estimated_diameter_max
@@ -96,7 +120,7 @@ function Results(props) {
               <h3>Speed when discovered (km/s): {velocidad}</h3>
               <h3>Name: {nombre}</h3>
               <p>Discovered asteroides: {asteroides.length}</p>
-              <button onClick="favoritos()">Add to fav</button>
+              {fav}
               <button onClick={()=>{otro()}}>other</button>
             </div>
             <div id="cuadroImagen">

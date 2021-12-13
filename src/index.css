@@ -16,7 +16,7 @@
 #root{
     background: url("cielo_estrellado.jpg") no-repeat fixed center;
       background-size: 100% 100%;
-      height: 30cm;
+      height: 21cm;
 }
 
 #espacio{
@@ -124,11 +124,13 @@
       }
 
       #cuadroLogin{
+          display: flex;
           background-color: rgb(57, 68, 63);
           flex-direction: column;
           padding: 5ch;
           padding-top: 2ch;
           border-radius: 1ch;
+          width: 30ch;
           
       }
       #contenedorCuadroLogin{
