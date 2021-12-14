@@ -15,24 +15,30 @@ function Results(props) {
   let url = 'https://asteroidsizeserver.herokuapp.com/';
 
   if(props.login == 'me'){
-    fav = <button onClick={()=>{favoritos(props.data.data[0], props.fecha)}}>Add to fav</button>
+    fav = <button onClick={()=>{favoritos(props.data.data[0], props.fecha); console.log(props.data)}}>Add to fav</button>
   }
 
-  function favoritos(data, fecha){
-    console.log(data);
+  function favoritos(datos, fecha){
+    console.log(datos);
+    datos.fav.push(fecha);
+    props.data.data[0] = datos;
+    props.setData(props.data);
     fetch(`${url}favoritos/guardar`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                  email: data.email,
+                  email: datos.email,
                   fecha: fecha,
                 }),
               }).then((res)=>{
                 return res.json();
               }).then((data)=>{
-                console.log(data);
+                // console.log('desde fav')
+                // console.log(data);
+                // data.data[0].fecha.push(fecha);
+                // props.setData(data);
             });
   }
 

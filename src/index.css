@@ -168,3 +168,17 @@
         background-color: rgb(1, 37, 15);
         border-radius: 1ch;
       }
+
+      #listaFechas{
+          display: flex;
+          flex-direction: column;
+      }
+
+      .botonesFechas{
+          padding: 1ch;
+          margin: 0ch;
+          border-radius: 0ch;
+          width: 30ch;
+          text-align: left;
+          background-color: grey;
+      }

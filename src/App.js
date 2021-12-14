@@ -41,7 +41,7 @@ function App() {
       <>
           <Cabecera menu={menu} login={login}/>
           <div id="espacio"></div>
-          <Busqueda funcion={setFecha} menu={menu} data={data}/>
+          <Busqueda funcion={setFecha} menu={menu} data={data} setData={setData}/>
           
       </>
     )
@@ -50,7 +50,7 @@ function App() {
       <>
         <Cabecera menu={menu} login={login}/>
         <div id="espacio"></div>
-        <Results fecha={fecha} menu={menu} login={login} data={data}/>
+        <Results fecha={fecha} menu={menu} login={login} data={data} setData={setData}/>
       </>
     )
   }else if(control == 'login'){
