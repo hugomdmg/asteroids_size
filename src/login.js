@@ -65,7 +65,7 @@ function Login(props) {
     }else if (control) {
     return (
       <div id="contenedorCuadroLogin">
-        <div id="cuadroLogin">
+        <div id="cuadroLogin" class='cuadroSearch'>
           <p>Email:</p>
           <input type="email" id="email"/>
           <p>Password:</p>

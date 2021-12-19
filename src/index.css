@@ -1,184 +1,179 @@
-#cargando{
+#cargando {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10ch;
+}
+
+#cuadroImagen {
+  width: 20%;
+  padding-left: 40%;
+  padding-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#root {
+  background: url("cielo_estrellado.jpg") no-repeat fixed center;
+  background-size: 100% 100%;
+  height: 21cm;
+}
+
+#espacio {
+  height: 4cm;
+}
+
+@media (min-width: 501px) {
+  body {
+    background: url("cielo_estrellado.jpg") no-repeat fixed center;
+    background-size: 100% 100%;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  header {
+    background: url("cielo_estrellado.jpg") no-repeat fixed center;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    position: fixed;
+    width: 95%;
+  }
+  nav {
+    justify-content: center;
+  }
+  button {
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    width: 100px;
+  }
+  #columnasBusqueda {
+    display: flex;
+  }
+  #fecha {
+    display: flex;
+  }
+  input {
+    margin: 2px;
+  }
+
+  #fondo {
+    background: no-repeat fixed center;
+    background-size: 100% 100%;
+    padding-bottom: 400px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #datos {
+    color: rgb(90, 2, 70);
+  }
+}
+
+@media (max-width: 500px) {
+  * {
+    justify-content: center;
     text-align: center;
-    padding-top:10ch
-}
-
-#cuadroImagen{
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#root{
+  }
+  body {
     background: url("cielo_estrellado.jpg") no-repeat fixed center;
-      background-size: 100% 100%;
-      height: 21cm;
+    background-size: 100% 100%;
+    color: white;
+  }
+
+  header {
+    justify-content: center;
+  }
+  nav {
+    justify-content: center;
+  }
+  button {
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    width: 100px;
+  }
+  #fecha {
+    display: flex;
+  }
+  input {
+    margin: 2px;
+  }
 }
 
-#espacio{
-    height: 4cm;
+#cuadroLogin {
+  display: flex;
+  background-color: rgb(57, 68, 63);
+  flex-direction: column;
+  padding: 5ch;
+  padding-top: 2ch;
+  border-radius: 1ch;
+  width: 30ch;
+}
+#contenedorCuadroLogin {
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 501px){
-  body{
-      background: url("cielo_estrellado.jpg") no-repeat fixed center;
-      background-size: 100% 100%;
-      color: white;
-      margin-left: 40px;
-      margin-right: 40px;
-  }
-  
-  header{
-    background: url("cielo_estrellado.jpg") no-repeat fixed center;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 2px solid rgb(255, 255, 255);
-      position: fixed;
-      width: 95%;
-  }
-  nav{
-      justify-content: center;
-  }
-  button{
-      margin: 10px;
-      margin-top: 30px;
-      border-radius: 10px;
-      background-color: white;
-      color: black;
-      width: 100px;
-     
-  }
-  #columnasBusqueda{
-      display: flex;
-  }
-  #fecha{
-      display: flex;
-  }
-  input{
-      margin: 2px;
-  }
-  
-  #fondo{
-      background: no-repeat fixed center;
-      background-size: 100% 100%;
-      padding-bottom: 400px;
-      padding-right: 100px;
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  #datos{
-      margin: 50px;
-      color: brown;
-  }
-  }
-  
-  
-  @media (max-width: 500px){
-      *{
-          justify-content: center;
-          text-align: center;
-      }
-      body{
-          background: url("cielo_estrellado.jpg") no-repeat fixed center;
-          background-size: 100% 100%;
-          color: white;
-      }
-      
-      header{
-          justify-content: center;
-      }
-      nav{
-          justify-content: center;
-      }
-      button{
-          margin: 10px;
-          margin-top: 30px;
-          border-radius: 10px;
-          background-color: white;
-          color: black;
-          width: 100px;
-         
-      }
-      #fecha{
-          display: flex;
-      }
-      input{
-          margin: 2px;
-      }
-      
-      #fondo{
-          background: fixed;
-          padding-bottom: 400px;
-          justify-content: center;
-      }
-      
-      #datos{
-          margin: 50px;
-          color: brown;
-      }
-      }
+#botonesLogin {
+  display: flex;
+  flex-direction: row;
+}
 
-      #cuadroLogin{
-          display: flex;
-          background-color: rgb(57, 68, 63);
-          flex-direction: column;
-          padding: 5ch;
-          padding-top: 2ch;
-          border-radius: 1ch;
-          width: 30ch;
-          
-      }
-      #contenedorCuadroLogin{
-        display: flex;
-        justify-content: center;
-      }
+#botonRegistro {
+  background-color: rgb(57, 68, 63);
+}
 
-      #botonesLogin{
-          display: flex;
-          flex-direction: row;
-      }
+#botonLogin {
+  border-radius: 0ch;
+}
 
-      #botonRegistro{
-          background-color: rgb(57, 68, 63);
-      }
+#cuadroAsteroids {
+  display: flex;
+  justify-content: center;
+}
 
-      #botonLogin{
-          border-radius: 0ch;
-      }
+#asteroids {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(129, 60, 3);
+  border-radius: 2ch;
+}
 
-      #cuadroAsteroids{
-        display: flex;
-        justify-content: center;
-      }
+#canvasGame {
+  background-color: rgb(1, 37, 15);
+  border-radius: 1ch;
+}
 
-      #asteroids{
-          display: flex;
-          flex-direction: column;
-          background-color: rgb(129, 60, 3);
-          border-radius: 2ch;
+#listaFechas {
+  display: flex;
+  flex-direction: column;
+}
 
-      }
+.botonesFechas {
+  padding: 1ch;
+  border-radius: 0ch;
+  width: 30ch;
+  text-align: left;
+  background-color: grey;
+}
 
-      #canvasGame{
-        background-color: rgb(1, 37, 15);
-        border-radius: 1ch;
-      }
-
-      #listaFechas{
-          display: flex;
-          flex-direction: column;
-      }
-
-      .botonesFechas{
-          padding: 1ch;
-          margin: 0ch;
-          border-radius: 0ch;
-          width: 30ch;
-          text-align: left;
-          background-color: grey;
-      }
+.cuadroSearch {
+  background-color: rgb(57, 68, 63);
+  padding: 2ch;
+  margin-top: 1ch;
+  margin-left: 1ch;
+  opacity: 0.8;
+  width: fit-content;
+  border-radius: 1ch;
+  position: fixed;
+}

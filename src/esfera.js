@@ -134,6 +134,7 @@ function Esfera(props) {
 
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
+    //relleno del planeta
     for (let i = 0; i < 2 * Math.PI; i = i + 0.04) {
       ctx.beginPath();
       ctx.strokeStyle = "#bfe8f3";
@@ -143,6 +144,7 @@ function Esfera(props) {
       ctx.stroke();
     }
 
+    //atmosfera del planeta
     for (let i = 0; i < 2 * Math.PI; i = i + 0.04) {
       ctx.beginPath();
       ctx.strokeStyle = "rgb(175, 209, 241)";

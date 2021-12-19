@@ -118,7 +118,7 @@ function Results(props) {
       <>
         <div id="tarjetaResultados">
           <div id="fondo">
-            <div id="datos">
+            <div id="datos" class='cuadroSearch'>
               <h2>Asteroid data:</h2>
               <h3>Mayor axis (km): {ejeMayor}</h3>
               <h3>Minor axis (km): {ejeMenor}</h3>
